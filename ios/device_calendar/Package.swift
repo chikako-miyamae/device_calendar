@@ -16,6 +16,7 @@ let package = Package(
         .target(
             name: "device_calendar",
             dependencies: [],
+            publicHeadersPath: ".",
             linkerSettings: [
                 .linkedFramework("EventKit"),
                 .linkedFramework("EventKitUI"),
