@@ -18,13 +18,5 @@ let package = Package(
             dependencies: [],
             path: "Sources/device_calendar_objc"
         ),
-        
-            .target(
-                name: "device_calendar",
-                dependencies: [
-                    "device_calendar_objc"
-                ],
-                path: "Sources/device_calendar"
-            )
     ]
 )
