@@ -8,7 +8,7 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "device-calendar",
+            name: "device_calendar",
             targets: ["device_calendar"])
     ],
     dependencies: [],
