@@ -9,18 +9,14 @@ let package = Package(
     products: [
         .library(
             name: "device-calendar",
-            targets: ["device_calendar"]),
+            targets: ["device_calendar"])
     ],
     dependencies: [],
     targets: [
         .target(
             name: "device_calendar",
             dependencies: [],
-            publicHeadersPath: ".",
-            linkerSettings: [
-                .linkedFramework("EventKit"),
-                .linkedFramework("EventKitUI"),
-            ]
-        ),
+            publicHeadersPath: "."
+        )
     ]
 )
