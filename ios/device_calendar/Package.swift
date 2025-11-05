@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "device_calendar",
     platforms: [
-        .iOS(.v13)
+        .iOS("13.0")
     ],
     products: [
         .library(
@@ -14,9 +14,17 @@ let package = Package(
     dependencies: [],
     targets: [
         .target(
-            name: "device_calendar",
+            name: "device_calendar_objc",
             dependencies: [],
-            publicHeadersPath: "."
-        )
+            path: "Sources/device_calendar_objc"
+        ),
+        
+            .target(
+                name: "device_calendar",
+                dependencies: [
+                    "device_calendar_objc"
+                ],
+                path: "Sources/device_calendar"
+            )
     ]
 )

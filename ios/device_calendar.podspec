@@ -13,10 +13,9 @@ A new flutter plugin project.
   s.author           = { 'Your Company' => 'email@example.com' }
   s.source           = { :path => '.' }
   s.swift_version = '5.0'
-  s.source_files = 'device_calendar/Sources/device_calendar/**/*.swift'
-  s.public_header_files = 'device_calendar/Sources/device_calendar/**/*.h'
+  s.source_files = 'device_calendar/Sources//**/*.{swift,m,h}'
+  s.public_header_files = 'device_calendar/Sources/device_calendar_objc/include/device_calendar/**/*.h'
   s.dependency 'Flutter'
   
   s.ios.deployment_target = '8.0'
 end
-
