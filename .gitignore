@@ -21,3 +21,7 @@ example/ios/Flutter/Flutter.podspec
 **/.project
 **/.classpath
 .vscode
+
+# Swift Package Manager
+.swiftpm/
+.build/

@@ -23,6 +23,7 @@ extension String {
     }
 }
 
+@objc(DeviceCalendarPlugin)
 public class SwiftDeviceCalendarPlugin: NSObject, FlutterPlugin, EKEventViewDelegate, UINavigationControllerDelegate {
     struct DeviceCalendar: Codable {
         let id: String
